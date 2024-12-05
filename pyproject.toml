@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "linksac"
+version = "0.1.0"
+description = ""
+authors = ["abdkarr <7543956+abdkarr@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+torch-geometric = ">=2.5.3"
+pandas = {extras = ["feather", "parquet"], version = ">=2.2.2"}
+igraph = ">=0.11.5"
+imbalanced-learn = ">=0.12.2"
+crowd-kit = ">=1.3.0.post0"
+torch = ">=2.3.0"
+numba = ">=0.59.1"
+ranx = "^0.3.19"
+littleballoffur = {git = "https://github.com/abdkarr/littleballoffur"}
+numpy = "<2.0.0"
+networkit = "^11.0"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = ">=1.0.0"
+click = ">=8.1.7"
+seaborn = ">=0.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
