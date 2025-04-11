@@ -8,11 +8,19 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "networkx>=3.4.2",
+    "pandas>=2.2.3",
+    "requests>=2.32.3",
 ]
 
 [tool.poetry]
 packages = [{include = "linksac", from = "src"}]
 
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.3.5"
+pytest-cov = ">=6.1.1"
+black = ">=25.1.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
