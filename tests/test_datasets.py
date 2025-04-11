@@ -8,3 +8,6 @@ def test_load_wikipedia():
 
 def test_load_facebook():
     datasets.load_facebook(Path(PROJECT_DIR, "data"))
+
+def test_load_ucimessage():
+    datasets.load_ucimessage(Path(PROJECT_DIR, "data"))
